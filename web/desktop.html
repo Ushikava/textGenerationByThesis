@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ReWriteProject</title>
+    <script type="text/javascript" src="/eel.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="main_container">
+    <div class="main_table">
+        <table>
+			<tr>
+				<td>
+					<label class="custom-label">
+						Тезис:
+					</label>
+				</td>
+				<td>
+					<div class="thesis-field">
+						<input class="thesis-field__input" type="text" name="thesis_text"
+							   id="thesis_text" placeholder="Введите тезис">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<button class="button center-btn" onclick="get_text_from_model()">Генерировать</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label class="custom-label">
+						Ссылка:
+					</label>
+				</td>
+				<td>
+					<div class="link-field">
+						<input class="link-field__input" type="text" name="channel_link"
+							   id="channel_link" placeholder="https://testbase.ru">
+					</div>
+				</td>
+			</tr>
+		</table>
+
+		<div class="button-container">
+		  	<button class="button center-btn" id="gen_btn" onclick="get_data_from_link()">Собрать данные</button>
+		</div>
+    </div>
+</div>
+</body>
+
+<script type="text/javascript" src="/eel.js"></script>
+<script src="script.js"></script>
+
+</html>
