@@ -1,1 +1,3 @@
-# Parsing data and generate text
+# Parsing data/Text generation
+
+Файл модели отсутствует
