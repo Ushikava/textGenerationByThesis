@@ -6,7 +6,7 @@ tags:
 metrics:
 - accuracy
 model-index:
-- name: essays
+- name: thesis
   results: []
 ---
 
