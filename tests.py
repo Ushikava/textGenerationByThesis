@@ -5,6 +5,19 @@ import time
 import re
 
 
+num_of_posts: int = 200
+
+
+def get_num_posts():
+    return num_of_posts
+
+
+def set_num_posts(num):
+    global num_of_posts
+    num_of_posts = num
+    return 0
+
+
 def check_link(url):
     pattern = r"^https://t\.me/[a-zA-Z0-9]+$"
     if re.match(pattern, url):
@@ -43,7 +56,7 @@ def get_texts_from_chat(link):
     link_btn.click()
     time.sleep(2)
 
-    while len(finded_texts) < 200:
+    while len(finded_texts) < num_of_posts:
         finded_texts.clear()
         driver.execute_script(f"window.scrollTo(0, 1000)")
         post_texts = driver.find_elements(By.CLASS_NAME, 'tgme_widget_message_text')
