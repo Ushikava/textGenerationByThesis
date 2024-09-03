@@ -53,8 +53,72 @@ th, td {
 .thesis-field, .link-field {
     margin-bottom: 10px;
 }
+
 .thesis-field__input, .link-field__input {
     font-size: 16px;
+}
+
+.link-field-settings {
+   padding-bottom: 5px;
+}
+
+.link-field-settings__button {
+    background-color: #fff;
+    border: none;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.link-field-settings__button:hover {
+  background-color: #ccc; /* цвет фона при наведении на кнопку */
+}
+
+.link-field-settings__button:active {
+  background-color: #aaa; /* цвет фона при нажатии на кнопку */
+}
+
+.link-field-settings__icon {
+    font-size: 18px;
+    color: #333;
+    line-height: 30px;
+}
+
+.link-field-settings__image {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+.thesis-field-settings {
+   padding-bottom: 5px;
+}
+.thesis-field-settings__button {
+  background-color: #fff;
+  border: none;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.thesis-field-settings__button:hover {
+  background-color: #ccc; /* цвет фона при наведении на кнопку */
+}
+
+.thesis-field-settings__button:active {
+  background-color: #aaa; /* цвет фона при нажатии на кнопку */
+}
+
+.thesis-field-settings__icon {
+  font-size: 18px;
+  color: #333;
+  line-height: 30px;
 }
 
 .main_container {
@@ -85,8 +149,11 @@ th, td {
 }
 
 .button:active {
-    transform: translateY(2px);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    background-color: #2e7d3a;
+    border-color: #2e7d3a;
 }
+
 
 .custom-label {
     display: block;
@@ -96,6 +163,7 @@ th, td {
     font-weight: bold;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding-bottom: 15px;
 }
 
 .center-btn {
