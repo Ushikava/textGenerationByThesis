@@ -23,6 +23,15 @@
 							   id="thesis_text" placeholder="Введите тезис">
 					</div>
 				</td>
+				<td>
+					<div class="thesis-field-settings">
+						<button class="thesis-field-settings__button" onclick="thesis_set_params()">
+							<i class="thesis-field-settings__icon"></i>
+							<img class="link-field-settings__image"
+								 src="https://cdn-icons-png.flaticon.com/512/563/563541.png">
+						</button>
+					</div>
+				</td>
 			</tr>
 			<tr>
 				<td colspan="2">
@@ -41,12 +50,24 @@
 							   id="channel_link" placeholder="https://testbase.ru">
 					</div>
 				</td>
+				<td>
+					<div class="link-field-settings">
+						<button class="link-field-settings__button" onclick="link_set_params()">
+							<i class="link-field-settings__icon"></i>
+							<img class="link-field-settings__image"
+								 src="https://cdn-icons-png.flaticon.com/512/563/563541.png">
+						</button>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+		  			<button class="button center-btn" id="gen_btn" onclick="get_data_from_link()">Собрать данные</button>
+				</td>
 			</tr>
 		</table>
 
-		<div class="button-container">
-		  	<button class="button center-btn" id="gen_btn" onclick="get_data_from_link()">Собрать данные</button>
-		</div>
+
     </div>
 </div>
 </body>
