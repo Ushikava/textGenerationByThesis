@@ -23,5 +23,92 @@ def get_answer(msg):
     return answer
 
 
+@eel.expose
+def get_num_posts():
+    max_posts = tests.get_num_posts()
+    return max_posts
+
+
+@eel.expose
+def set_num_posts(nums):
+    tests.set_num_posts(nums)
+    pass
+
+
+# max_length
+
+
+@eel.expose
+def get_max_length():
+    return max_length
+
+
+@eel.expose
+def set_max_length(length):
+    global max_length
+    max_length = length
+    pass
+
+
+# repetition_penalty
+
+
+@eel.expose
+def get_repetition():
+    return repetition_penalty
+
+
+@eel.expose
+def set_repetition(rep):
+    global repetition_penalty
+    repetition_penalty = rep
+    pass
+
+
+# top_k
+
+
+@eel.expose
+def get_top_k():
+    return top_k
+
+
+@eel.expose
+def set_top_k(k):
+    global top_k
+    top_k = k
+    pass
+
+
+# top_p
+
+
+@eel.expose
+def get_top_p():
+    return top_p
+
+
+@eel.expose
+def set_top_p(p):
+    global top_p
+    top_p = p
+    pass
+
+
+# temperature
+
+
+@eel.expose
+def get_temperature():
+    return temperature
+
+
+@eel.expose
+def set_temperature(temper):
+    global temperature
+    temperature = temper
+    pass
+
+
 eel.start("desktop.html", size=(800, 600))
 
